@@ -5,7 +5,7 @@ Vigil AI treats the crowd as granular matter and detect a jamming transition by 
 1. Make connections as shown in the image below.
 2. Clone the git repo using 
 ```sh 
-$ git clone  
+$ git clone https://github.com/Gokul2406/VigilAI.git
 ```
 3. Install the required packages. If you are using pip then use 
 ```sh
@@ -45,9 +45,9 @@ So we are looking into deformation accumulation rather than velocity of the peop
 **Normal motion**: strain releases but in Stampede strain accumulates. This is stored mechanical stress. We track **Energy**. This will tell us if the motion is still being forced? if yes then its a stampede and if no then the situation has been settled. We measure the kinetic energy here which is mean of velocity in x direction and velocity in y direction.
 **Temporal Decision**: We detect trends, not values:Is strain increasing compared to the recent past? Is motion still persistent? This makes Vigil AI: Scale Independent, Camera angle independent and Crowd size independent.
 ## Output States:
-0 -> Normal: Motion continues, stress relaxed.
-1 -> Pre-Alert: Stress building, early warning.
-2 -> Stampede: Stress accumulating under force.
+1. 0 -> Normal: Motion continues, stress relaxed.
+2. 1 -> Pre-Alert: Stress building, early warning.
+3. 2 -> Stampede: Stress accumulating under force.
 
 # Tech Stack Used
 We've made the model in python using opencv to perform the required analysis. The live feed is taken via the Raspberry Pi Camera Module 3 attached with the Raspberry Pi. 
