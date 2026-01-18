@@ -2,7 +2,16 @@
 Vigil AI is a real time edge AI crowd safety system that detects stampede precursors using granular based crowd dynamics.
 Vigil AI treats the crowd as granular matter and detect a jamming transition by measuring accumulated deformation under continued motion, not speed or density.
 ## Steps To Run The Code
-1. Make connections as shown in the image below.
+1. Make connections for raspberry pi with nRF24L01 as given in the table below.
+
+| Component | PIN |
+| --------- | --- |
+| CE        | 22  |
+| CSN       | 24  |
+| SCK       | 23  |
+| MOSI      | 19  |
+| MISO      | 21  |
+
 2. Clone the git repo using 
 ```sh 
 $ git clone https://github.com/Gokul2406/VigilAI.git
